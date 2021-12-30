@@ -1,5 +1,5 @@
 model-training/data
 **/.DS_Store
 **/.ipynb_checkpoints
-app/predictions.db
+predictions.db
 **/__pycache__/
