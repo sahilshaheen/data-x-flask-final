@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Home – Movie Sentiments
+    </title>
+</head>
+  <body>
+    {% extends "layout.html" %} {% block content %}
+    <p>
+      Analyse your movie review sentiments using AI! Type out your review in the
+      form below.
+    </p>
+    <form id="main-form" class="ui form" action="/result.html" method="post">
+      <div class="field">
+        <label>Review</label>
+        <textarea name="review" style="resize: none" rows="5"></textarea>
+      </div>
+      <button type="submit" class="tiny ui button">Submit</button>
+    </form>
+    {% endblock %}
+  </body>
+</html>

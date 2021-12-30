@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Result – Movie Sentiments</title>
+  </head>
+  <body>
+    {% extends "layout.html" %} {% block content %}
+    <p>That review review seemed <b>{{ sentiment }}</b>. Was it right?</p>
+    <form
+      id="feedback-form"
+      class="ui form"
+      action="/feedback.html"
+      method="post"
+    >
+      <input type="hidden" name="id" value="{{ movie_id }}" />
+      <div class="ui checkbox">
+        <input type="checkbox" tabindex="0" name="feedback" />
+        <label>It was right</label>
+      </div>
+      <br />
+      <br />
+      <button type="submit" class="tiny ui button">Submit</button>
+    </form>
+    {% endblock %}
+  </body>
+</html>
