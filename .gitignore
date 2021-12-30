@@ -1,0 +1,5 @@
+model-training/data
+**/.DS_Store
+app/model.pkl
+app/vect.pkl
+**/.ipynb_checkpoints
