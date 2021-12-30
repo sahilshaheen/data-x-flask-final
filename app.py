@@ -6,7 +6,7 @@ from nltk.corpus import stopwords
 from flask import Flask, render_template, request
 from setup import create_schema
 
-create_schema()
+create_schema(seed=True)
 
 nltk.download(["stopwords"])
 eng_stopwords = stopwords.words("english")

@@ -10,3 +10,4 @@ To reduce repo size, some extra steps are required to verify the code:
 2. Install app dependencies (requirements.txt) and run the app!
 
 **Note: The folder structure of the project has changed from the video for deployment purposes but there are no major changes**
+**The database is seeded with values from running locally since Heroku server restarts with inactivity**
