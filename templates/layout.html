@@ -16,13 +16,21 @@
   <body>
     <header>
       <h1>Movie Sentiments</h1>
-    </header>
-    <nav>
-      <ul>
+    
+    <nav class="ui tiny menu">
+      <a class="item" href="{{ url_for('home') }}">Home</a>
+      <a class="item" href="{{ url_for('data') }}">Data</a>
+      <!-- <div class="ui three item menu">
+        <a class="active item">Editorials</a>
+        <a class="item">Reviews</a>
+        <a class="item">Upcoming Events</a>
+      </div> -->
+      <!-- <ul>
         <li><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('data') }}">Data</a></li>
-      </ul>
+      </ul> -->
     </nav>
+  </header>
     <main>
         {% block content %}
         {% endblock %}

@@ -1,11 +1,17 @@
-html {
+header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin-bottom: 0;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem 0px;
+    padding: 1rem 1.5rem;
 }
