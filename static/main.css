@@ -7,6 +7,5 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    width: 800px;
     padding: 1.5rem 0px;
 }
